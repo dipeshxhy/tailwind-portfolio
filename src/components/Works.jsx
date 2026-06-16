@@ -27,8 +27,8 @@ const Works = () => {
   const showWork = works.map(w=> <Work key={w.id} image={w.image} />)
   return (
     <div className="container mx-auto">
-      <div className='py-30'>
-        <div className='w-1/2'>
+      <div className='py-30 px-3 md:px-0'>
+        <div className='md:w-1/2'>
           <h2 className="text-2xl font-bold mb-4">CHECK LATEST WORK</h2>
           <p className="mb-4 text-slate-600">
             But I must explain to you how all this mistaken idea of denouncing
@@ -38,7 +38,7 @@ const Works = () => {
         </div>
         <div>
           {/* tabs */}
-          <div className='flex gap-5 mb-8'>
+          <div className='flex  md:gap-5 md:mb-8 text-sm md:text-base mb-4 flex-wrap gap-2'>
             <button>All</button>
             <button>UI&UX</button>
             <button>Web Design</button>
@@ -47,7 +47,7 @@ const Works = () => {
           </div>
           {/* end tabs */}
           {/* works */}
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 img-box grid-rows-[1fr_auto] '>
+          <div className='grid  md:grid-cols-2 gap-4 img-box md:grid-rows-[1fr_auto] w-full '>
 
         {showWork}
           </div>

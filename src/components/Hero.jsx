@@ -5,7 +5,7 @@ const Hero = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className='bg-[#EDEDED] md:h-[calc(70vh-72px)] md:mb-20 mb-10'>
-      <div className='container mx-auto py-5 flex flex-col justify-between h-full'>
+      <div className='container mx-auto py-5 flex flex-col px-3 md:px-0 justify-between h-full'>
         <div className='flex justify-between items-center'>
           <h2 className='text-3xl font-black font-cursive'>Dipesh</h2>
 
