@@ -4,7 +4,7 @@ import Button from './Button'
 const Hero = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className='bg-[#EDEDED] h-[calc(70vh-72px)]'>
+    <div className='bg-[#EDEDED] md:h-[calc(70vh-72px)] md:mb-20 mb-10'>
       <div className='container mx-auto py-5 flex flex-col justify-between h-full'>
         <div className='flex justify-between items-center'>
           <h2 className='text-3xl font-black font-cursive'>Dipesh</h2>
@@ -25,15 +25,15 @@ const Hero = () => {
             </svg>
           </span>
         </div>
-        <div className='flex  justify-between h-90'>
-          <div className='flex flex-1 flex-col gap-4'>
+        <div className='flex flex-col md:flex-row  justify-between md:h-90'>
+          <div className='flex md:flex-1 flex-col py-10 md:py-0 order-1  gap-4 md:order-0'>
             <h3 className='text-3xl uppercase '>Hey, There</h3>
             <h1 className='text-4xl font-bold'>I AM Dipesh </h1>
             <p className='text-lg'>I am a web depeloper / designer</p>
             <Button classes="border border-2 uppercase  py-2 px-4 w-32 rounded text-stone-900">Hire Me</Button>
           </div>
-          <div className='h-full flex-1 '>
-            <img className='w-full h-full object-cover' src="https://images.unsplash.com/photo-1638482856830-16b0e15fcf2c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZGVyJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="" />
+          <div className='h-full  flex-1 '>
+            <img className='w-full h-[30vh] md:h-full object-cover' src="https://images.unsplash.com/photo-1638482856830-16b0e15fcf2c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZGVyJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="" />
           </div>
         </div>
       </div>
