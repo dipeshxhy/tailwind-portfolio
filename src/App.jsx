@@ -7,7 +7,7 @@ import Work from "./components/Works";
 const App = () => {
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF]">
+    <div className="min-h-screen  bg-[#FFFFFF]">
       <Nav/>
       <Hero/>
       <About/>
